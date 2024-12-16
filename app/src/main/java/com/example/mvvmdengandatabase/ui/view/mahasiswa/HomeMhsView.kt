@@ -38,6 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.mvvmdengandatabase.data.entity.Mahasiswa
+import com.example.mvvmdengandatabase.ui.customwidget.CustomTopAppBar
 import com.example.mvvmdengandatabase.ui.viewmodel.DetailMhsViewModel
 import com.example.mvvmdengandatabase.ui.viewmodel.HomeMhsViewModel
 import com.example.mvvmdengandatabase.ui.viewmodel.HomeUiState
@@ -54,7 +55,7 @@ fun HomeMhsView(
     Scaffold (
 
         topBar = {
-            TopAppBar(
+            CustomTopAppBar(
                 judul = "Daftar Mahasiswa",
                 showBackButton = false,
                 onBack = { },
