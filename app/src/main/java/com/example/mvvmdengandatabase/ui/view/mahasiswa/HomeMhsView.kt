@@ -146,7 +146,7 @@ fun BodyHomeMhsView(
 fun ListMahasiswa(
     listMhs: List<Mahasiswa>,
     modifier: Modifier = Modifier,
-    onClick: () -> Unit = { }
+    onClick: (String) -> Unit = { }
 ) {
     LazyColumn (
         modifier = modifier
@@ -156,7 +156,7 @@ fun ListMahasiswa(
             itemContent = { mhs ->
                 CardMhs(
                     mhs = mhs,
-                    onClick = { onClick(mhs.nim) }
+                    onClick = {onClick(mhs.nim)}
                 )
             }
         )

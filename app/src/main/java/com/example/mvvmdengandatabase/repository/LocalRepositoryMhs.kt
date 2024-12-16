@@ -13,11 +13,11 @@ class LocalRepositoryMhs (
     }
 
     override fun getAllMhs(): Flow<List<Mahasiswa>> {
-        TODO("Not yet implemented")
+        return mahasiswaDao.getAllMahasiswa()
     }
 
     override fun getMhs(nim: String): Flow<Mahasiswa> {
-        TODO("Not yet implemented")
+        return mahasiswaDao.getMahasiswa(nim)
     }
 
     override suspend fun deleteMhs(mahasiswa: Mahasiswa) {
